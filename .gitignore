@@ -1,0 +1,37 @@
+# Node.js: dependencias instaladas y resultados de compilación; se recuperan
+# con el gestor de paquetes y no son código fuente del proyecto.
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+dist/
+
+# Configuración local: puede contener claves, tokens o datos privados.
+.env
+.env.*
+!.env.example
+
+# Python: bytecode, entornos virtuales y cachés creados al ejecutar herramientas.
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+
+# Java/Gradle: clases y paquetes compilados; se generan desde los fuentes.
+*.class
+*.jar
+*.war
+target/
+.gradle/
+
+# Archivos locales del sistema operativo y del editor.
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
