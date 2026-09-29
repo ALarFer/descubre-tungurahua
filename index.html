@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explora destinos, naturaleza, cultura y sabores de la provincia de Tungurahua, Ecuador.">
+  <meta name="theme-color" content="#123d35">
+  <title>Descubre Tungurahua | Una provincia para explorar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/styles.css">
+  <script src="src/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Ir al contenido</a>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Descubre Tungurahua, inicio">
+      <span class="brand-mark" aria-hidden="true">DT</span>
+      <span>DESCUBRE <strong>TUNGURAHUA</strong></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú">
+      <span></span><span></span>
+    </button>
+    <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+      <a href="#destinos">Destinos</a>
+      <a href="pages/ambato.html">Experiencias</a>
+      <a href="pages/planifica.html">Planifica tu viaje</a>
+      <a href="#sobre">Sobre la provincia</a>
+      <a class="nav-cta" href="#destinos">Explorar lugares <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-art" aria-hidden="true">
+        <div class="sun"></div><div class="mountain mountain-back"></div><div class="mountain mountain-front"></div>
+        <div class="hero-stamp">ECUADOR<br><strong>· ANDES ·</strong></div>
+      </div>
+      <div class="hero-content">
+        <p class="eyebrow"><span class="eyebrow-line"></span> SIERRA CENTRO · ECUADOR</p>
+        <h1 id="hero-title">Un lugar para<br><em>sentirlo todo.</em></h1>
+        <p class="hero-copy">Montañas que inspiran, caminos que sorprenden y una cultura que te recibe con los brazos abiertos.</p>
+        <a class="button button-light" href="#destinos">Encuentra tu próximo destino <span aria-hidden="true">↓</span></a>
+        <div class="hero-note"><span class="note-dot"></span> 9 cantones · un sinfín de historias</div>
+      </div>
+      <div class="hero-vertical" aria-hidden="true">TUNGURAHUA, ECUADOR — 01°14′ S 78°37′ O</div>
+    </section>
+
+    <section class="intro section-wrap" id="sobre" aria-labelledby="intro-title">
+      <div class="intro-label"><span>01</span><span class="label-rule"></span> LA PROVINCIA</div>
+      <div class="intro-copy">
+        <h2 id="intro-title">Pequeña en el mapa.<br><em>Inmensa en experiencias.</em></h2>
+        <p>En el corazón de los Andes ecuatorianos, Tungurahua reúne aventura, tradición y paisajes que cambian a cada paso. Aquí cada cantón tiene algo propio que contarte.</p>
+      </div>
+      <div class="intro-stat"><strong>2.000—5.000</strong><span>metros de altura<br>para cambiar de perspectiva</span></div>
+    </section>
+
+    <section class="destinations section-wrap" id="destinos" aria-labelledby="destinations-title">
+      <div class="section-heading">
+        <div>
+          <div class="intro-label"><span>02</span><span class="label-rule"></span> ELIGE TU RUMBO</div>
+          <h2 id="destinations-title">Hay un camino<br><em>esperándote.</em></h2>
+        </div>
+        <p>Busca inspiración y encuentra un destino que vaya contigo.</p>
+      </div>
+
+      <div class="destination-tools">
+        <label class="search-box">
+          <span class="search-icon" aria-hidden="true">⌕</span>
+          <span class="visually-hidden">Buscar destinos</span>
+          <input id="destination-search" type="search" placeholder="¿Qué te gustaría descubrir?" autocomplete="off">
+          <kbd>⌘ K</kbd>
+        </label>
+        <div class="filters" role="group" aria-label="Filtrar destinos por experiencia">
+          <button class="filter-button is-active" type="button" data-filter="todos" aria-pressed="true">Todos</button>
+          <button class="filter-button" type="button" data-filter="naturaleza" aria-pressed="false">Naturaleza</button>
+          <button class="filter-button" type="button" data-filter="aventura" aria-pressed="false">Aventura</button>
+          <button class="filter-button" type="button" data-filter="cultura" aria-pressed="false">Cultura</button>
+        </div>
+      </div>
+
+      <div class="destination-grid" id="destination-grid">
+        <article class="destination-card card-banos" data-category="aventura naturaleza" data-search="baños de agua santa cascadas aventura naturaleza termas">
+          <div class="card-art art-banos"><img src="assets/images/destinos/banos.jpg" alt="Cascada entre las montañas verdes de Baños de Agua Santa" loading="lazy"><span class="art-label">01 / AVENTURA</span></div>
+          <div class="card-body"><div class="card-meta"><span>Baños de Agua Santa</span><span>01</span></div><h3>La aventura<br>está en el camino.</h3><p>Cascadas, senderos y planes para quienes prefieren vivir el viaje a toda velocidad.</p><a href="pages/banos.html" class="card-link" aria-label="Explorar experiencias en Baños de Agua Santa">Explorar destino <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="destination-card card-ambato" data-category="cultura" data-search="ambato cultura flores frutas fiesta frutas flores ambateñidad">
+          <div class="card-art art-ambato"><img src="assets/images/destinos/ambato.jpg" alt="Centro de Ambato con flores y montañas andinas al fondo" loading="lazy"><span class="art-label">02 / CULTURA</span></div>
+          <div class="card-body"><div class="card-meta"><span>Ambato</span><span>02</span></div><h3>Tradición con<br>alma propia.</h3><p>Una ciudad de flores, frutas, cultura y encuentros que se quedan contigo.</p><a href="#experiencias" class="card-link" aria-label="Explorar experiencias en Ambato">Explorar destino <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="destination-card card-pillaro" data-category="cultura naturaleza" data-search="píllaro pillaro cultura naturaleza tradición diablada paisajes">
+          <div class="card-art art-pillaro"><img src="assets/images/destinos/pillaro.jpg" alt="Paisaje andino y volcán junto a la zona de Píllaro" loading="lazy"><span class="art-label">03 / TRADICIÓN</span></div>
+          <div class="card-body"><div class="card-meta"><span>Píllaro</span><span>03</span></div><h3>Historias que<br>viven en la gente.</h3><p>Tradiciones, paisajes andinos y expresiones culturales con carácter único.</p><a href="#experiencias" class="card-link" aria-label="Explorar experiencias en Píllaro">Explorar destino <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="destination-card card-patate" data-category="naturaleza cultura" data-search="patate naturaleza cultura valle frutas vino paisaje">
+          <div class="card-art art-patate"><img src="assets/images/destinos/patate.jpg" alt="Valle verde y campos de cultivo en Patate" loading="lazy"><span class="art-label">04 / NATURALEZA</span></div>
+          <div class="card-body"><div class="card-meta"><span>Patate</span><span>04</span></div><h3>Respira. Estás<br>en el valle.</h3><p>Un rincón tranquilo para disfrutar del paisaje, los sabores y el aire de montaña.</p><a href="#experiencias" class="card-link" aria-label="Explorar experiencias en Patate">Explorar destino <span aria-hidden="true">↗</span></a></div>
+        </article>
+      </div>
+      <p class="empty-state" id="empty-state" hidden>No encontramos destinos con esa búsqueda. Prueba con otra palabra o categoría.</p>
+    </section>
+
+    <section class="experience-banner" id="experiencias" aria-labelledby="experience-title">
+      <div class="experience-mark" aria-hidden="true">✳</div>
+      <div class="experience-content"><p class="eyebrow">NO SOLO LO MIRES. VÍVELO.</p><h2 id="experience-title">El mejor recuerdo<br>todavía no lo tienes.</h2><p>Pronto podrás descubrir rutas, sabores y experiencias recomendadas por quienes mejor conocen Tungurahua: su gente.</p></div>
+      <a class="button button-dark" href="#destinos">Volver a explorar <span aria-hidden="true">↑</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#inicio"><span class="brand-mark" aria-hidden="true">DT</span><span>DESCUBRE <strong>TUNGURAHUA</strong></span></a>
+    <p>Hecho con cariño en Tungurahua, Ecuador.</p>
+    <a class="back-top" href="#inicio">Volver arriba ↑</a>
+    <small>© <span id="current-year"></span> Descubre Tungurahua</small>
+  </footer>
+</body>
+</html>
